@@ -1,6 +1,8 @@
 <template>
-    <div>World</div>
-    <Countries/>
+    <div class="body">
+        <Countries/>
+    </div>
+    
 </template>
 
 <script>
@@ -17,5 +19,7 @@ export default {
 </script>
 
 <style scoped>
-
+    .body{
+        margin-top: 20px;
+    }
 </style>

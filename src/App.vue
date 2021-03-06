@@ -1,6 +1,9 @@
 <template>
 <Header/>
-<router-view></router-view>
+<div class="view">
+  <router-view></router-view>
+</div>
+
 <Footer/>
 </template>
 
@@ -18,4 +21,7 @@ export default {
 </script>
 
 <style>
+.view {
+  margin-top: 120px;
+}
 </style>

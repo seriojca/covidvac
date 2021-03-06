@@ -1,5 +1,5 @@
 <template>
-    <div v-for="country in countries" v-bind:key="country.name">
+    <div v-for="country in countries" v-bind:key="country.name" class="body">
         <div v-if="vaccination.find((vaccine)=> vaccine.iso_code==country.alpha3Code)">
         <Country :country="country" :vaccination="vaccination.find((vaccine)=> vaccine.iso_code==country.alpha3Code)" />
         </div>
