@@ -1,7 +1,8 @@
 <template>
-    <div v-for="country in data" v-bind:key="country.id">
-        <Country :country="country" />
-
+    <div v-for="country in countries" v-bind:key="country.name">
+        <div v-if="vaccination.find((vaccine)=> vaccine.iso_code==country.alpha3Code)">
+        <Country :country="country" :vaccination="vaccination.find((vaccine)=> vaccine.iso_code==country.alpha3Code)" />
+        </div>
     </div>
 </template>
 
@@ -17,13 +18,22 @@ export default {
     },
     data () {
         return {
-            data : null
+            countries : [],
+            vaccination:[],
         }
     },
-    mounted() { 
-        axios
-        .get('https://restcountries.eu/rest/v2/all')
-        .then(response => (this.data = response.data)).then(console.log)
+    async mounted() {
+        const [countries,vaccinations] = await Promise.all([axios('https://restcountries.eu/rest/v2/all'),axios('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json')])
+        this.countries = countries.data
+        this.vaccination = vaccinations.data
+        console.log(countries.data)
+        console.log(vaccinations.data)
+        // const max = { }
+        // for (let vaccine of vaccinations.data) {
+        //     if (vaccine.iso_data in max) {
+        //         if (max[])
+        //     }
+        // }
     }
     
 }
