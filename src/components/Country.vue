@@ -33,8 +33,6 @@ export default {
     vaccination: Object,
   },
   data() {
-    console.log(this.country);
-    console.log(this.vaccination);
     return {
       cases: 123,
     };
@@ -81,11 +79,15 @@ export default {
     justify-content: center;
     align-content: center;
   }
+
 }
 
 @media only screen and (max-width: 1024px) {
   .country {
     width: 100%;
+  }
+  h1 {
+    font-size: 1.5em;
   }
 }
 h1,
@@ -97,6 +99,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 img {
   margin-left: 40px;
@@ -129,6 +132,7 @@ img {
   left: 0;
   right: 0;
   color: black;
+  opacity: .9;
   z-index: 10000;
 }
 .progress .value {
@@ -143,20 +147,5 @@ img {
   display: flex;
   align-self: center;
   justify-content: center;
-}
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
-  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
-      format("svg");
 }
 </style>

@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Map from "../views/Map.vue";
 import Data from "../views/Data.vue";
+import Sources from "../views/Sources.vue"
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/map",
     name: "Map",
     component: Map,
+  },
+  {
+    path: "/sources",
+    name: "Sources",
+    component: Sources,
   },
 ];
 

@@ -2,12 +2,9 @@
   <div class="body">
     <div class="title">covid vaccinated people</div>
     <div class="nav">
-      <router-link to="/"><el-button class="btn" type="success" plain>Stats</el-button></router-link>
-      <router-link to="/map"
-        ><el-button class="btn" type="success" plain>Map</el-button></router-link
-      >
+      <router-link class="btn" to="/"><p>stats</p></router-link>
+      <router-link class="btn" to="/map"><p>map</p></router-link>
     </div>
-
   </div>
 </template>
 
@@ -16,22 +13,8 @@ export default {};
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
-  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
-      format("svg");
-}
-
 .body {
+  font-family: "SF Pro Text";
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,16 +27,49 @@ export default {};
   padding: 15px;
 }
 .btn {
-  margin: 0px 15px 0px 15px;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 15px 10px 15px;
+  background: #f3f0f1;
+  border-radius: 32px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.8),
+    2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+  inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+.btn:hover p {
+  
+  transition: all 0.3s ease-in-out;
+  opacity: 0.9;
+}
+.btn p {
+  
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
 }
 .nav {
+  
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
 }
 .title {
-  font-family: "SF Pro Text";
+  margin-bottom: 10px;
   font-size: 1.2em;
   justify-content: center;
   text-align: center;
@@ -64,5 +80,4 @@ export default {};
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
-
 </style>

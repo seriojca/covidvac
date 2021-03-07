@@ -21,7 +21,22 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot");
+  src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
+      format("svg");
+}
 .view {
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 </style>
