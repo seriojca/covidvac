@@ -21,10 +21,10 @@ export default {};
   width: 100%;
   position: fixed;
   z-index: 9999999999999999999;
-  margin-top: -120px;
   background: white;
   border-bottom: 1px solid gray;
   padding: 15px;
+  top: 0px;
 }
 .btn {
   width: 100px;

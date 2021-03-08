@@ -1,8 +1,11 @@
 <template>
 <Header/>
-<div class="view">
+<div class="body">
+  <div class="view">
   <router-view></router-view>
 </div>
+</div>
+
 
 <Footer/>
 </template>
@@ -35,6 +38,8 @@ export default {
     url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
       format("svg");
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 .view {
   margin-top: 120px;
   margin-bottom: 120px;
