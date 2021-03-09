@@ -76,7 +76,6 @@ export default {
   background: white;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   border-radius: 20px;

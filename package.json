@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "csv-parse": "^4.15.3",
     "element-plus": "^1.0.2-beta.33",
+    "v-infinite-scroll": "^1.0.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.4",
     "vuetify": "^2.4.5"

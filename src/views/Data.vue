@@ -1,6 +1,6 @@
 <template>
     <div class="body">
-        <Countries/>
+        <Countries />
     </div>
     
 </template>
@@ -13,9 +13,10 @@ export default {
     components: {
         Countries,
 
-    }
+    },
     
 }
+
 </script>
 
 <style scoped>

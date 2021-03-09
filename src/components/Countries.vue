@@ -36,14 +36,16 @@ export default {
     return {
       countries: [],
       vaccination: [],
-      searchCountries:[],
+      searchCountries: [],
     };
   },
   methods: {
     filterCountries(input) {
-      console.log(input)
-      this.searchCountries = this.countries.filter(country =>country.name.toLowerCase().includes(input))
-      console.log(this.countries)
+      console.log(input);
+      this.searchCountries = this.countries.filter((country) =>
+        country.name.toLowerCase().includes(input.toLowerCase())
+      );
+      console.log(this.countries);
     },
   },
   async mounted() {
@@ -56,6 +58,8 @@ export default {
     this.countries = countries.data;
     this.vaccination = vaccinations.data;
     this.searchCountries = countries.data;
+    console.log(this.countries);
+
   },
 };
 </script>
